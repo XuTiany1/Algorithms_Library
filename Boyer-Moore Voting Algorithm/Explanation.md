@@ -84,7 +84,7 @@ Some key properties that allowed this algorithm to function are the following:
 **Mathematical Justification:**
 
 - Let the number of occurrences of `M` be `x`, and the number of occurrences of all other elements be `y`.
-- By definition, $\x > \frac{n}{2}\$ and $\ y < \frac{n}{2} \$.
+- By definition, $x > \frac{n}{2}\$ and $y < \frac{n}{2} \$.
 - During the traversal, when we encounter `M`, the `count` increases by 1.
 - When we encounter a different element, the `count` decreases by 1.
 - The net effect is that `M` will push the count positively, as it has more occurrences to counteract the decrement caused by other elements.
