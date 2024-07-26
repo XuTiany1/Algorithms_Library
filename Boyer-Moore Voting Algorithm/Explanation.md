@@ -9,7 +9,7 @@ A majority element is an element that appears more than ⌊n/2⌋ times, where n
 **Speed and Space Complexity**
 The algorithm operates in O(n) time and O(1) space
 
-## Intuitive Understanding Via Examplar
+## Intuitive Understanding Via Example
 Let's go through an example to illustrate the algorithm:
 
 Suppose we have the array: [3, 3, 4, 2, 4, 4, 2, 4, 4].
