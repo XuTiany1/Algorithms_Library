@@ -19,16 +19,15 @@ candidate = None
 count = 0
 
 **First Pass:**
-
-`3`: `count` is 0, so `candidate` = 3 and `count` = 1.
-`3`: `candidate` is 3, so `count` = 2.
-`4`: `candidate` is 3, so `count` = 1.
-`2`: `candidate` is 3, so `count` = 0.
-`4`: `count` is 0, so `candidate` = 4 and `count` = 1.
-`4`: `candidate` is 4, so `count` = 2.
-`2`: `candidate` is 4, so `count` = 1.
-`4`: `candidate` is 4, so `count` = 2.
-`4`: `candidate` is 4, so `count` = 3.
+- `3`: `count` is 0, so `candidate` = 3 and `count` = 1.
+- `3`: `candidate` is 3, so `count` = 2.
+- `4`: `candidate` is 3, so `count` = 1.
+- `2`: `candidate` is 3, so `count` = 0.
+- `4`: `count` is 0, so `candidate` = 4 and `count` = 1.
+- `4`: `candidate` is 4, so `count` = 2.
+- `2`: `candidate` is 4, so `count` = 1.
+- `4`: `candidate` is 4, so `count` = 2.
+- `4`: `candidate` is 4, so `count` = 3.
 At the end of the first pass, the `candidate` is 4 with a `count` of 3.
 
 **Second Pass (Verification):**
