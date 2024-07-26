@@ -58,17 +58,36 @@ Since 5 > ⌊9/2⌋, 4 is the majority element.
 
 
 
+## Why does this method work? -> Diving Deeper to the Logic
+
+
+The Boyer-Moore Voting Algorithm works due to the inherent properties of the majority element and how it handles counts during the traversal of the array.
+
+
+Some key properties that allowed this algorithm to function are the following:
+
+**Majority Element Property:**
+>:bulb: The majority element is defined as the element that appears more than ⌊n/2⌋ times in the array of size n.
+
+**Balancing Counts:**
+>:bulb: By using a counter that increases for the candidate and decreases for non-candidates, the algorithm leverages the fact that the majority element, if it exists, will balance out all other elements due to its higher frequency.
 
 
 
+## Why does this method work? -> Mathematical Justification
 
+- Suppose the majority element is `M` and it appears more than ⌊n/2⌋ times.
+- Whenever we encounter `M`, we increment the `count`.
+- Whenever we encounter an element different from `M`, we decrement the `count`.
+- Since `M` appears more frequently than any other element, the count will be positive by the end of the array. This is because the majority element `M` will offset the influence of all other elements combined.
 
+**Mathematical Justification:**
 
-
-
-
-
-
+- Let the number of occurrences of `M` be `x`, and the number of occurrences of all other elements be `y`.
+- By definition, \( x > \frac{n}{2} \) and \( y < \frac{n}{2} \).
+- During the traversal, when we encounter `M`, the `count` increases by 1.
+- When we encounter a different element, the `count` decreases by 1.
+- The net effect is that `M` will push the count positively, as it has more occurrences to counteract the decrement caused by other elements.
 
 
 
